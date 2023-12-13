@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: "Inter", sans-serif;
+    background-color: #1A1A1B;
+    color: #FEFEFF;
+}
+
+#root{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+    transition: all 0.3s ease-in-out;
+    padding: 0.5rem;
+}
+
+.container:hover{
+    background-color: white;
+    color: black;
+}
+
+@media screen and (max-width: 800px){
+    #root{
+        align-items: flex-start;
+    }
+
+    .container{
+        width: 80%;
+    }
+}
