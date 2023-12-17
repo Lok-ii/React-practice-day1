@@ -8,7 +8,7 @@ const firstContainer = React.createElement("div", {className: "firstContainer"},
 
 const anchor = React.createElement('a', { href: 'https://developer.mozilla.org/en-US/' }, 'the rest of MDN');
 
-const p2 = React.createElement("p", {className : "p2"}, 'The aim of this area of MDN is not to take you from "beginner" to "expert" but to take you from "beginner" to "comfortable." From there, you should be able to start making your way, learning from ', anchor, ' and other intermediate to advanced resources that assume a lot of previous knowledge.');
+const p2 = React.createElement("p", {className : "p2"}, 'The aim of this area of MDN is not to take you from "beginner" to "expert" but to take you from "beginner" to "comfortable." From there, you should be able to start making your way, learning from ' , anchor, ' and other intermediate to advanced resources that assume a lot of previous knowledge.');
 
 const secondContainer = React.createElement("div", {className: "secondContainer"}, p2);
 
@@ -18,4 +18,3 @@ const thirdContainer = React.createElement("div", {className: "thirdContainer"},
 
 const container = React.createElement("div", {className: 'container'}, heading, firstContainer, secondContainer, thirdContainer);
 ReactDOM.render(container, rootElement);
-
